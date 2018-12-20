@@ -13,6 +13,9 @@
 		FC352CA521CB4F6A0017608F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC352CA421CB4F6A0017608F /* Assets.xcassets */; };
 		FC352CA821CB4F6A0017608F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC352CA621CB4F6A0017608F /* LaunchScreen.storyboard */; };
 		FC352CB321CB52230017608F /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC352CB221CB52230017608F /* ShadowView.swift */; };
+		FC352CB821CB59CD0017608F /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = FC352CB521CB59CD0017608F /* TimeAlert.png */; };
+		FC352CB921CB59CD0017608F /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = FC352CB621CB59CD0017608F /* DateAlert.png */; };
+		FC352CBA21CB59CD0017608F /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = FC352CB721CB59CD0017608F /* LocationAlert.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FC352CA721CB4F6A0017608F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC352CA921CB4F6A0017608F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC352CB221CB52230017608F /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		FC352CB521CB59CD0017608F /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
+		FC352CB621CB59CD0017608F /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
+		FC352CB721CB59CD0017608F /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		FC352CB021CB51010017608F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FC352CB421CB59B00017608F /* NotificationAssets */,
 				FC352CA121CB4F670017608F /* Main.storyboard */,
 				FC352CA621CB4F6A0017608F /* LaunchScreen.storyboard */,
 			);
@@ -89,6 +96,16 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FC352CB421CB59B00017608F /* NotificationAssets */ = {
+			isa = PBXGroup;
+			children = (
+				FC352CB621CB59CD0017608F /* DateAlert.png */,
+				FC352CB721CB59CD0017608F /* LocationAlert.png */,
+				FC352CB521CB59CD0017608F /* TimeAlert.png */,
+			);
+			path = NotificationAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +167,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC352CA821CB4F6A0017608F /* LaunchScreen.storyboard in Resources */,
+				FC352CB921CB59CD0017608F /* DateAlert.png in Resources */,
 				FC352CA521CB4F6A0017608F /* Assets.xcassets in Resources */,
+				FC352CBA21CB59CD0017608F /* LocationAlert.png in Resources */,
 				FC352CA321CB4F670017608F /* Main.storyboard in Resources */,
+				FC352CB821CB59CD0017608F /* TimeAlert.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
