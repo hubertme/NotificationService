@@ -15,11 +15,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UNHelper.shared.authorize()
     }
     
     // MARK: - Actions
     @IBAction func onTimerTapped(_ sender: UIButton){
         print("timer")
+        
     }
     
     @IBAction func onDateTapped(_ sender: UIButton){

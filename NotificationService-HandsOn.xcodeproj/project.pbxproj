@@ -16,6 +16,7 @@
 		FC352CB821CB59CD0017608F /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = FC352CB521CB59CD0017608F /* TimeAlert.png */; };
 		FC352CB921CB59CD0017608F /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = FC352CB621CB59CD0017608F /* DateAlert.png */; };
 		FC352CBA21CB59CD0017608F /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = FC352CB721CB59CD0017608F /* LocationAlert.png */; };
+		FC352CBD21CB61B70017608F /* UNHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC352CBC21CB61B70017608F /* UNHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FC352CB521CB59CD0017608F /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
 		FC352CB621CB59CD0017608F /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
 		FC352CB721CB59CD0017608F /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
+		FC352CBC21CB61B70017608F /* UNHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				FC352CB121CB51030017608F /* Model */,
 				FC352CB021CB51010017608F /* View */,
 				FC352CAF21CB50FF0017608F /* Controller */,
+				FC352CBB21CB618B0017608F /* Services */,
 				FC352C9D21CB4F670017608F /* AppDelegate.swift */,
 				FC352CA421CB4F6A0017608F /* Assets.xcassets */,
 				FC352CA921CB4F6A0017608F /* Info.plist */,
@@ -106,6 +109,14 @@
 				FC352CB521CB59CD0017608F /* TimeAlert.png */,
 			);
 			path = NotificationAssets;
+			sourceTree = "<group>";
+		};
+		FC352CBB21CB618B0017608F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FC352CBC21CB61B70017608F /* UNHelper.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC352CBD21CB61B70017608F /* UNHelper.swift in Sources */,
 				FC352CB321CB52230017608F /* ShadowView.swift in Sources */,
 				FC352CA021CB4F670017608F /* ViewController.swift in Sources */,
 				FC352C9E21CB4F670017608F /* AppDelegate.swift in Sources */,
