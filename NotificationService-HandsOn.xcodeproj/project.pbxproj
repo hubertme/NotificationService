@@ -54,14 +54,38 @@
 		FC352C9C21CB4F670017608F /* NotificationService-HandsOn */ = {
 			isa = PBXGroup;
 			children = (
+				FC352CB121CB51030017608F /* Model */,
+				FC352CB021CB51010017608F /* View */,
+				FC352CAF21CB50FF0017608F /* Controller */,
 				FC352C9D21CB4F670017608F /* AppDelegate.swift */,
-				FC352C9F21CB4F670017608F /* ViewController.swift */,
-				FC352CA121CB4F670017608F /* Main.storyboard */,
 				FC352CA421CB4F6A0017608F /* Assets.xcassets */,
-				FC352CA621CB4F6A0017608F /* LaunchScreen.storyboard */,
 				FC352CA921CB4F6A0017608F /* Info.plist */,
 			);
 			path = "NotificationService-HandsOn";
+			sourceTree = "<group>";
+		};
+		FC352CAF21CB50FF0017608F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC352C9F21CB4F670017608F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC352CB021CB51010017608F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC352CA121CB4F670017608F /* Main.storyboard */,
+				FC352CA621CB4F6A0017608F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC352CB121CB51030017608F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WF8BJSYNB;
 				INFOPLIST_FILE = "NotificationService-HandsOn/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WF8BJSYNB;
 				INFOPLIST_FILE = "NotificationService-HandsOn/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
