@@ -38,7 +38,6 @@ class UNHelper: NSObject {
     
     // MARK: - Methods to notify users in constraint
     func timerRequest(with interval: TimeInterval) {
-        print("Timer triggered")
         let content = UNMutableNotificationContent()
         content.title = "Timer finished"
         content.body = "Your timer is up"
@@ -51,13 +50,26 @@ class UNHelper: NSObject {
                                             trigger: trigger)
         UNCenter.add(request) { (error) in
             if error != nil {
-                print("Error in adding local notification")
+                print("Error in adding local timer notification")
             }
         }
     }
     
-    func dateRequest(with components: Date){
+    func dateRequest(with components: DateComponents){
+        let content = UNMutableNotificationContent()
+        content.title = "Date triggered!"
+        content.body = "It is the future!"
+        content.sound = .default
+        content.badge = 2
         
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+        let request = UNNotificationRequest(identifier: "userNotification.date", content: content, trigger: trigger)
+        
+        UNCenter.add(request) { (error) in
+            if error != nil {
+                print("Error in adding local date notification")
+            }
+        }
     }
     
     func locationRequest(){

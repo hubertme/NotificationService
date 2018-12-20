@@ -26,6 +26,9 @@ class ViewController: UIViewController {
     
     @IBAction func onDateTapped(_ sender: UIButton){
         print("date")
+        var components = DateComponents()
+        components.second = 0
+        UNHelper.shared.dateRequest(with: components)
     }
     
     @IBAction func onLocationTapped(_ sender: UIButton){
