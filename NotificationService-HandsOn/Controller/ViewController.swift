@@ -21,18 +21,25 @@ class ViewController: UIViewController {
     // MARK: - Actions
     @IBAction func onTimerTapped(_ sender: UIButton){
         print("timer")
-        UNHelper.shared.timerRequest(with: 5)
+        AlertHelper.actionSheet(in: self, title: "5 Seconds") {
+            UNHelper.shared.timerRequest(with: 5)
+        }
     }
     
     @IBAction func onDateTapped(_ sender: UIButton){
         print("date")
-        var components = DateComponents()
-        components.second = 0
-        UNHelper.shared.dateRequest(with: components)
+        AlertHelper.actionSheet(in: self, title: "Some future time") {
+            var components = DateComponents()
+            components.second = 0
+            UNHelper.shared.dateRequest(with: components)
+        }
     }
     
     @IBAction func onLocationTapped(_ sender: UIButton){
         print("location")
+        AlertHelper.actionSheet(in: self, title: "Coming soon") {
+            // Some setup for location
+        }
     }
 }
 
