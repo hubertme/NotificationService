@@ -42,6 +42,8 @@ class UNHelper: NSObject {
         let content = UNMutableNotificationContent()
         content.title = "Timer finished"
         content.body = "Your timer is up"
+        content.sound = .default
+        content.badge = 1
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
         let request = UNNotificationRequest(identifier: "userNotification.timer",
