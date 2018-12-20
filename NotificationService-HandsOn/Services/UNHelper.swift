@@ -35,6 +35,32 @@ class UNHelper: NSObject {
     func configure() {
         UNCenter.delegate = self
     }
+    
+    // MARK: - Methods to notify users in constraint
+    func timerRequest(with interval: TimeInterval) {
+        print("Timer triggered")
+        let content = UNMutableNotificationContent()
+        content.title = "Timer finished"
+        content.body = "Your timer is up"
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
+        let request = UNNotificationRequest(identifier: "userNotification.timer",
+                                            content: content,
+                                            trigger: trigger)
+        UNCenter.add(request) { (error) in
+            if error != nil {
+                print("Error in adding local notification")
+            }
+        }
+    }
+    
+    func dateRequest(with components: Date){
+        
+    }
+    
+    func locationRequest(){
+        
+    }
 }
 
 // MARK: -

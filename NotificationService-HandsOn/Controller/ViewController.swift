@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     // MARK: - Actions
     @IBAction func onTimerTapped(_ sender: UIButton){
         print("timer")
-        
+        UNHelper.shared.timerRequest(with: 5)
     }
     
     @IBAction func onDateTapped(_ sender: UIButton){
