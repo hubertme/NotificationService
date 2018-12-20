@@ -22,13 +22,13 @@ class UNHelper: NSObject {
         UNCenter.requestAuthorization(options: options) { (isGranted, error) in
             if let error = error {
                 print("Error in authorising:", error.localizedDescription)
-                guard isGranted else {
-                    // Handle if the user will not grant access
-                    print("User denied access!")
-                    return
-                }
-                self.configure()
             }
+            guard isGranted else {
+                // Handle if the user will not grant access
+                print("User denied access!")
+                return
+            }
+            self.configure()
         }
     }
     
