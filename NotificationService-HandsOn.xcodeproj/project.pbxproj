@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E48FCD3321CC9FBA009F8463 /* CLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FCD3221CC9FBA009F8463 /* CLHelper.swift */; };
 		E48FCD3521CD3442009F8463 /* NotificationAttachmentId.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FCD3421CD3442009F8463 /* NotificationAttachmentId.swift */; };
+		E48FCD3721CD385C009F8463 /* NotificationActionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FCD3621CD385C009F8463 /* NotificationActionId.swift */; };
+		E48FCD3921CD39BE009F8463 /* NotificationCategoryId.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FCD3821CD39BE009F8463 /* NotificationCategoryId.swift */; };
 		FC352C9E21CB4F670017608F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC352C9D21CB4F670017608F /* AppDelegate.swift */; };
 		FC352CA021CB4F670017608F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC352C9F21CB4F670017608F /* ViewController.swift */; };
 		FC352CA321CB4F670017608F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC352CA121CB4F670017608F /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		E48FCD3221CC9FBA009F8463 /* CLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLHelper.swift; sourceTree = "<group>"; };
 		E48FCD3421CD3442009F8463 /* NotificationAttachmentId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentId.swift; sourceTree = "<group>"; };
+		E48FCD3621CD385C009F8463 /* NotificationActionId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionId.swift; sourceTree = "<group>"; };
+		E48FCD3821CD39BE009F8463 /* NotificationCategoryId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCategoryId.swift; sourceTree = "<group>"; };
 		FC352C9A21CB4F670017608F /* NotificationService-HandsOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotificationService-HandsOn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC352C9D21CB4F670017608F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC352C9F21CB4F670017608F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				E48FCD3421CD3442009F8463 /* NotificationAttachmentId.swift */,
+				E48FCD3621CD385C009F8463 /* NotificationActionId.swift */,
+				E48FCD3821CD39BE009F8463 /* NotificationCategoryId.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +215,8 @@
 				FC352CC121CB6DE90017608F /* AlertHelper.swift in Sources */,
 				E48FCD3321CC9FBA009F8463 /* CLHelper.swift in Sources */,
 				FC352C9E21CB4F670017608F /* AppDelegate.swift in Sources */,
+				E48FCD3721CD385C009F8463 /* NotificationActionId.swift in Sources */,
+				E48FCD3921CD39BE009F8463 /* NotificationCategoryId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
