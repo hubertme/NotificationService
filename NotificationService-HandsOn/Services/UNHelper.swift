@@ -34,6 +34,19 @@ class UNHelper: NSObject {
     
     func configure() {
         UNCenter.delegate = self
+        setupActionsAndCategories()
+    }
+    
+    func setupActionsAndCategories() {
+        let timerAction = UNNotificationAction(identifier: NotificationActionId.timer.rawValue, title: "Run timer logic", options: [.authenticationRequired])
+        let dateAction = UNNotificationAction(identifier: NotificationActionId.date.rawValue, title: "Run date logic", options: [.destructive])
+        let locationAction = UNNotificationAction(identifier: NotificationActionId.location.rawValue, title: "Run location logic", options: [.foreground])
+        
+        let timerCategory = UNNotificationCategory(identifier: NotificationCategoryId.timer.rawValue, actions: [timerAction], intentIdentifiers: [])
+        let dateCategory = UNNotificationCategory(identifier: NotificationCategoryId.date.rawValue, actions: [dateAction], intentIdentifiers: [])
+        let locationCategory = UNNotificationCategory(identifier: NotificationCategoryId.location.rawValue, actions: [locationAction], intentIdentifiers: [])
+        
+        UNCenter.setNotificationCategories([timerCategory, dateCategory, locationCategory])
     }
     
     func getAttachment(for id: NotificationAttachmentId) -> UNNotificationAttachment? {
@@ -64,6 +77,7 @@ class UNHelper: NSObject {
         content.body = "Your timer is up"
         content.sound = .default
         content.badge = 1
+        content.categoryIdentifier = NotificationCategoryId.timer.rawValue
         
         if let attachment = getAttachment(for: .timer){
             content.attachments = [attachment]
@@ -86,6 +100,7 @@ class UNHelper: NSObject {
         content.body = "It is the future!"
         content.sound = .default
         content.badge = 2
+        content.categoryIdentifier = NotificationCategoryId.date.rawValue
         
         if let attachment = getAttachment(for: .date){
             content.attachments = [attachment]
@@ -107,6 +122,7 @@ class UNHelper: NSObject {
         content.body = "おかえりなさい!"
         content.sound = .default
         content.badge = 3
+        content.categoryIdentifier = NotificationCategoryId.location.rawValue
         
         if let attachment = getAttachment(for: .location){
             content.attachments = [attachment]
