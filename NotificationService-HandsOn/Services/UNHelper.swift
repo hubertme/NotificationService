@@ -73,7 +73,19 @@ class UNHelper: NSObject {
     }
     
     func locationRequest(){
+        let content = UNMutableNotificationContent()
+        content.title = "You have returned"
+        content.body = "おかえりなさい!"
+        content.sound = .default
+        content.badge = 3
         
+        let request = UNNotificationRequest(identifier: "userNotification.location", content: content, trigger: nil)
+        
+        UNCenter.add(request) { (error) in
+            if error != nil {
+                print("Error in adding local location notification")
+            }
+        }
     }
 }
 

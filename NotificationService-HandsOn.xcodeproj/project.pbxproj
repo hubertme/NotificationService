@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E48FCD3321CC9FBA009F8463 /* CLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48FCD3221CC9FBA009F8463 /* CLHelper.swift */; };
 		FC352C9E21CB4F670017608F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC352C9D21CB4F670017608F /* AppDelegate.swift */; };
 		FC352CA021CB4F670017608F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC352C9F21CB4F670017608F /* ViewController.swift */; };
 		FC352CA321CB4F670017608F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC352CA121CB4F670017608F /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E48FCD3221CC9FBA009F8463 /* CLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLHelper.swift; sourceTree = "<group>"; };
 		FC352C9A21CB4F670017608F /* NotificationService-HandsOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotificationService-HandsOn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC352C9D21CB4F670017608F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC352C9F21CB4F670017608F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				FC352CBC21CB61B70017608F /* UNHelper.swift */,
 				FC352CC021CB6DE90017608F /* AlertHelper.swift */,
+				E48FCD3221CC9FBA009F8463 /* CLHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				FC352CB321CB52230017608F /* ShadowView.swift in Sources */,
 				FC352CA021CB4F670017608F /* ViewController.swift in Sources */,
 				FC352CC121CB6DE90017608F /* AlertHelper.swift in Sources */,
+				E48FCD3321CC9FBA009F8463 /* CLHelper.swift in Sources */,
 				FC352C9E21CB4F670017608F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

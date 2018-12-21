@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         UNHelper.shared.authorize()
+        CLHelper.shared.authorize()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didEnterRegion), name: NSNotification.Name("internalNotification.enterRegion"), object: nil)
     }
     
     // MARK: - Actions
@@ -37,9 +40,13 @@ class ViewController: UIViewController {
     
     @IBAction func onLocationTapped(_ sender: UIButton){
         print("location")
-        AlertHelper.actionSheet(in: self, title: "Coming soon") {
-            // Some setup for location
+        AlertHelper.actionSheet(in: self, title: "When I return") {
+            CLHelper.shared.updateLocation()
         }
+    }
+    
+    @objc private func didEnterRegion() {
+        UNHelper.shared.locationRequest()
     }
 }
 
