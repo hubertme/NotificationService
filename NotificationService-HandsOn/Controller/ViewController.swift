@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         CLHelper.shared.authorize()
         
         NotificationCenter.default.addObserver(self, selector: #selector(didEnterRegion), name: NSNotification.Name("internalNotification.enteredRegion"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleAction), name: NSNotification.Name("internalNotification.handleAction"), object: nil)
     }
     
     // MARK: - Actions
@@ -47,6 +48,18 @@ class ViewController: UIViewController {
     
     @objc func didEnterRegion() {
         UNHelper.shared.locationRequest()
+    }
+    
+    @objc private func handleAction(_ sender: Notification) {
+        guard let action = sender.object as? NotificationActionId else {return}
+        switch action{
+        case .timer:
+            print("Timer logic")
+        case .date:
+            print("Date logic")
+        case .location:
+            print("Location logic")
+        }
     }
 }
 
