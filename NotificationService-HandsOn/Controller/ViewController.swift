@@ -24,14 +24,12 @@ class ViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func onTimerTapped(_ sender: UIButton){
-        print("timer")
         AlertHelper.actionSheet(in: self, title: "5 Seconds") {
             UNHelper.shared.timerRequest(with: 5)
         }
     }
     
     @IBAction func onDateTapped(_ sender: UIButton){
-        print("date")
         AlertHelper.actionSheet(in: self, title: "Some future time") {
             var components = DateComponents()
             components.second = 0
@@ -40,7 +38,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onLocationTapped(_ sender: UIButton){
-        print("location")
         AlertHelper.actionSheet(in: self, title: "When I return") {
             CLHelper.shared.updateLocation()
         }
@@ -59,7 +56,12 @@ class ViewController: UIViewController {
             print("Date logic")
         case .location:
             print("Location logic")
+            changeBackground()
         }
+    }
+    
+    private func changeBackground() {
+        view.backgroundColor = .red
     }
 }
 
